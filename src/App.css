@@ -1,22 +1,89 @@
-.App {
-  text-align: center;
+#Bar{
+  display: flex;
+  font-family: Roboto;
+  margin: 0px 0px 20px 0px;
 }
 
-.App-logo {
-  height: 40vmin;
+#Card{
+  color:rgb(73, 73, 238);
+  background-color: silver;
+  padding: 20px;
+  border: 0;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+#Card:focus {
+  color:rgb(22, 22, 240);
+  box-shadow: 0 10px rgba(245, 79, 79, 0.545);
+}
+#Card:hover {
+  background-color: rgb(122, 196, 199);
+}
+#Prod{
+  color:rgb(73, 73, 238);
+  background-color: silver;
+  padding: 20px;
+  border: 0;
+}
+#Prod:focus {
+  color:rgb(22, 22, 240);
+  box-shadow: 0 8px rgba(245, 79, 79, 0.545);
+}
+#Prod:hover {
+  background-color: rgb(122, 196, 199);
+}
+.Sel{
+  border-radius: 60%;
+  margin: 0;
+  width: auto;
+  height: 40px;
+  background-color: rgb(122, 196, 199);
+  
+  border: 0;
+}
+.ElemP{
+  background-color: silver;
+  width: 40%;
+  margin: 10px;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  
 }
-
-.App-link {
-  color: #09d3ac;
+.ElemP:hover{
+  border-bottom:solid rgba(245, 79, 79, 0.545) 3px;
+}
+.ElemC{
+  background-color: silver;
+  width: 40%;
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+}
+.ElemC:hover{
+  border-bottom:solid rgba(245, 79, 79, 0.545) 3px;
+}
+.add{
+  border: 0;
+  width: 20%;
+  background-color: rgb(122, 196, 199);
+  color: rgb(77, 77, 243);
+  text-align: left;
+  
+}
+.add:hover{
+  background-color: rgba(245, 79, 79, 0.545);
+  box-shadow: 50px 0px rgba(243, 137, 137, 0.703);
+}
+.remove{
+  border: 0;
+  width: 20%;
+  background-color: rgb(122, 196, 199);
+  color: rgb(77, 77, 243);
+  text-align: left;
+}
+.remove:hover{
+  background-color: rgba(245, 79, 79, 0.545);
+  box-shadow: 50px 0px rgba(243, 137, 137, 0.703);
+}
+.item{
+  margin: 5px;
+  font-style: italic;
 }
