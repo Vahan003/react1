@@ -10,7 +10,7 @@ class Navigation extends Component {
         }
     }
     componentDidMount() {
-        fetch ("https://5d8e0901370f02001405c7c9.mockapi.io/api/v1/postblog/item")
+        fetch ("http://5d9b4390686ed000144d1ed9.mockapi.io/js/rbase0")
         .then (response => response.json())
         .then (data => {
             console.log(data);
@@ -25,8 +25,8 @@ class Navigation extends Component {
         return (<div>
             {
             list.map((elem)=>(<div className={"ElemP"}>
-            <h4 className= "item">{elem.name}</h4>
-            <p className= "item">{elem.price}$</p>
+            <h4 className= "item">{`${elem.name}`}</h4>
+            <p className= "item">{`${elem.price}`}$</p>
             <button className="add" onClick = {()=>this.Add(elem)}>Add</button>
             </div>))
             }
